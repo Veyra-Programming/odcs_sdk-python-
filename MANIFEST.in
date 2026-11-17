@@ -1,0 +1,17 @@
+
+include README.md
+include LICENSE
+
+recursive-include odcs_sdk *.py
+recursive-include odcs_sdk *.js
+recursive-include odcs_sdk *.css
+recursive-include odcs_sdk *.json
+recursive-include odcs_sdk *.toml
+recursive-include odcs_sdk *.md
+recursive-include odcs_sdk *.txt
+recursive-include odcs_sdk *.star
+recursive-include odcs_sdk *.hvn
+recursive-include odcs_sdk *.wasm
+
+global-exclude __pycache__
+global-exclude *.py[cod]
