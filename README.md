@@ -42,10 +42,10 @@ ODCS brings together complementary technology projects:
 
 ## 📦 Installation
 
-The planned PyPI distribution name is `odcs-core`.
+The planned PyPI distribution name is `odcs-sdk`.
 
 ```bash
-pip install odcs-core
+pip install odcs-sdk
 ```
 
 The installation command will work once the corresponding distribution is published on PyPI.
