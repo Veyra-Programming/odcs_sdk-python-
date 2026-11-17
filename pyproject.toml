@@ -1,0 +1,55 @@
+
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "odcs-sdk"
+version = "2.0.0"
+description = "Python SDK for the Open Digital Continuity Standard, including Star and Haven language tooling."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+
+authors = [
+    { name = "Anirudha Puthraya" }
+]
+
+keywords = [
+    "ODCS",
+    "Open Digital Continuity Standard",
+    "offline-first",
+    "digital-continuity",
+    "Star",
+    "Haven",
+    "programming-language",
+    "Python-SDK"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: Apache Software License"
+]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://odcs.in"
+Repository = "https://github.com/Veyra-Programming/odcs_sdk-python-"
+Documentation = "https://github.com/Veyra-Programming/open-digital-continuity-standard-"
+Issues = "https://github.com/Veyra-Programming/odcs_sdk-python-/issues"
+
+[project.scripts]
+odcs = "odcs_sdk.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["odcs_sdk*"]
+
+[tool.setuptools.package-data]
+"odcs_sdk.star_backend.wasm" = ["*.js", "*.css"]
